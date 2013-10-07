@@ -1,75 +1,125 @@
-<!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Charithtangirala.github.io by charithtangirala</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- CDN -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- Skeleton -->
+    <link rel="stylesheet" href="stylesheets/base.css">
+	  <link rel="stylesheet" href="stylesheets/skeleton.css">
+	  <link rel="stylesheet" href="stylesheets/layout.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheets/main.css">
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/charithtangirala">View On GitHub</a></li>
-        </nav>
-      </div><!-- end header -->
-
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Charithtangirala.github.io</h1>
-          <p></p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/charithtangirala">charithtangirala</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+    <div class="container">
+      <header class="header">
+        <h1>Charith Tangirala</h1>
+        <hr/>
+      </header>
+      <div class="social">
+        <a href="https://github.com/charithtangirala"><i class="icon-github icon-large"></i></a>
+        <a href="http://www.linkedin.com/pub/charith-tangirala/2/47/38"><i class="icon-linkedin icon-large"></i></a>
+        <a href="https://twitter.com/ctangirala"><i class="icon-twitter icon-large"></i></a>
+        <!--<a href=""><i class="icon-facebook icon-large"></i></a>-->
+      </div>
+      <h2>Namaste!</h2>
+      <p>
+        I am a software engineer by profession and I am constantly pooking my head into multiple disciplines of computer science.
+        I am currently employed at Cisco and work in the Collaboration Technology Group. Ouside of work, I love cooking (and eating),
+        traveling, photography and playing video games (mostly MMOs).
+      </p>
+      <h2>What's new...</h2>
+        <div class="row">
+          <div class="three columns alpha">
+            <h3>Big Data</h3>
+          </div>
+          <div class="thirteen columns omega">
+            <p>
+              The recent outburst of social media web sites such as facebook, twitter and linkedin has introduced new challeges and
+              business opportunities. The challenge is that end users such as you and me are constantly uploading massive amounts of
+              media (audio, video and text) and the challenge is twofold, storage and computing.
+            </p>
+            <p>
+              Lets talk storage issues. Up until now relational databases have done a decent job in storing end user data. Typically,
+              there is a cluster of database servers and each server in the cluster is replicated for redundancy and high availabitly.
+              All the data is stored in a single database server. But once data starts to grow into massive numbers for a single user,
+              it starts putting a hole in this model. This is because it is not possible to store all this data on a single database
+              server. The solution is to distribute the data across multiple database server. This is where NoSQL databases come to
+              your rescue!
+            </p>
+            <p>
+              As data grows larger, processing the data and performing complex operations also becomes challening and time consuming.
+              Distributed and/or parallel computing is a logical solution in this scenario. In particular the MapReduce programing model
+              is used to process large sets of data using parallel, distributed algorithms on a cluster of computers. The most popular
+              open-source implementation of MapReduce programming model is Apache Hadoop. If you haven't already jumped on the Big Data
+              bandwagon, it is time you jump on it as this field is growing fast.
+            </p>
+          </div>
         </div>
-
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-
+        <div class="row">
+          <div class="three columns alpha">
+            <h3>WebRTC</h3>
+          </div>
+          <div class="thirteen columns omega">
+            <p>
+              If you aren't already familiar with the ongoing efforts in the area of WebRTC, then let me catch you up quickly! Google
+              started to toy around with the idea that any real-time communication (audio, video and data) over web should be browser independent
+              and plugin-free. In other words, media streaming capabilities must be native to all browsers and must be easily available
+              to developers in form of javascript APIs and HTML syntax. You might be thinking, "WoW! Thats a huge effort to get all browser
+              vendors to implement this." You are right, it is a massive effort and thats where IETF steps in. IETF formed a group called
+              RTCWeb (Real Time Communications over Web) in order to impose standards and specifications and in general to govern the
+              implementation by various browser vendors. RTCWeb and WebRTC are exactly same except that the term RTCWeb is used when someone
+              is talking about the IETF specifications and WebRTC is often used when someone talks about the W3C implementation of IETF specs.
+            </p>
+            <p>
+              Does it sound exciting yet? You can keep up with the latest news by visiting <a href="http://webrtc.org">webrtc.org</a>.
+              I am currently working with Mozilla Firefox team through Cisco by helping them implement WebRTC APIs in Firefox, more
+              specifically in the signalling layer. It has been a challenging process thus far because for the past seven years, I have been
+              working in the application layer. On the contrary, WebRTC' signaling layer is mostly C and C++. It is fun and I get to learn a
+              lot. So far, I have been still in the learning phase and fixed a few defects. I am hoping to get involved with more core features
+              soon. I have a sample WebRTC application (still a work in progress) hosted in github,
+              <a href="https://github.com/charithtangirala/webrtc-app"> https://github.com/charithtangirala/webrtc-app</a>.
+              Currently it supports end-to-end video and audio calling. Feel free to fork! If you are looking for a step-by-step tutorial,
+              take a look at <a href="http://www.html5rocks.com/en/tutorials/webrtc/basics/"> HTML5 Rocks</a> site.
+            </p>
+            <p>
+              You might be wondering how Cisco is involved in WebRTC. Let me explain, Cisco open-sourced its SIP stack, SDP Engine and
+              Call-Control application logic used in Cisco's Soft Phone product. The open source project can be found on GitHub by name
+              <a href="https://github.com/ethanhugg/ikran">ikran</a>. A few engineers from Cisco have been collaborating with Mozilla team
+              to implement WebRTC in Firefox and that is how I got involved.
+          </div>
+        </div>
+        <div class="row">
+          <div class="three columns alpha">
+            <h3>Web Operations</h3>
+          </div>
+          <div class="thirteen columns omega">
+            <div class="eight columns alpha">
+              <p>
+                I recently started reading a book by John Allspaw on Web Operations. Web Operations is all about site reliability, architecture
+                and computing. A Web Operations engineer is an all-rounder who has broad understanding of several architectural components such as
+                processor architectures, memory systems, storage systems, network switching and routing, HTTP, database, etc. I think it is simply
+                awesome to be involved in architecting a solution which is thourougly monitored and easy to diagnose in the event of major downtime.
+                If you are about to build such an infrastructure or have aspirations to be an architect or web/dev operations engineer, then this
+                book is a very good read.
+              </p>
+            </div>
+            <div class="five columns alpha">
+              <blockquote>
+                <p>
+                  "Operations is all about understanding where theory and practice collide, and devising methodologies to limit the casualties from
+                  the explosions that ensue."
+                </p>
+                <cite>John Allspaw &amp; Jesse Robins, Web Operations</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
   </body>
 </html>
