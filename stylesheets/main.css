@@ -1,17 +1,21 @@
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, a, p, cite {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
 }
-h3, h4 {
+h3, h4, cite {
   font-weight: 300;
   color: #c02702;
 }
-p {
+a, p {
   font-weight: 400;
   font-size: 16px;
 }
-a {
+cite.subtitle {
+  font-style: italic;
+}
+a, a:visited {
   text-decoration: none;
+  color: #008899;
 }
 .header {
   text-align: center;
@@ -29,6 +33,6 @@ a {
 [class^="icon-"], [class*=" icon-"] {
   padding: 0px 0px 0px 5px;
 }
-[class^="icon-"]:hover, [class*=" icon-"]:hover {
+a:hover, [class^="icon-"]:hover, [class*=" icon-"]:hover {
   color: #c02702;
 }
