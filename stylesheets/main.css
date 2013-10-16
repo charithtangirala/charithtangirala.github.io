@@ -17,6 +17,9 @@ a, a:visited {
   text-decoration: none;
   color: #008899;
 }
+.container {
+  padding: 50px;
+}
 .header {
   text-align: center;
   padding: 10px 0px 0px 0px;
